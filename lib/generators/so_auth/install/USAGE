@@ -1,0 +1,8 @@
+Description:
+    Generate config and initializer for a client of SoAuthProvider.
+
+Example:
+    rails generate so_auth:install
+
+    This will create:
+        config/initializers/omniauth.rb
