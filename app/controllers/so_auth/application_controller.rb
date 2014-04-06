@@ -5,13 +5,13 @@ module SoAuth
 
     before_filter :check_cookie
     def check_cookie
-      if cookies[:so_auth].nil? && session[:user_id].present?
+      if !cookie_valid?
         session[:user_id] = nil
-        not_authorized
-      elsif cookies[:so_auth].present? && session[:user_id].present? && cookies[:so_auth].to_s != session[:user_id].to_s
-        session[:user_id] = nil
-        not_authorized
       end
+    end
+
+    def cookie_valid?
+      cookies[:so_auth].present? && session[:user_id].present? && cookies[:so_auth].to_s == session[:user_id].to_s
     end
 
     def login_required
