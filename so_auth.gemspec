@@ -7,11 +7,11 @@ require "so_auth/version"
 Gem::Specification.new do |s|
   s.name        = "so_auth"
   s.version     = SoAuth::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SoAuth."
-  s.description = "TODO: Description of SoAuth."
+  s.authors     = ["Jeremy Green"]
+  s.email       = ["jeremy@octolabs.com"]
+  s.homepage    = "https://github.com/jagthedrummer/so_auth"
+  s.summary     = "A gem that allows a Rails app to be an client of SoAuthProvider."
+  s.description = "A gem that allows a Rails app to be an client of SoAuthProvider."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
