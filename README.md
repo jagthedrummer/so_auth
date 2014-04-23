@@ -1,7 +1,13 @@
 # SoAuth
 
 A Rails engine that makes it easy to delegate authentication for a Rails
-site to SoAuthProvider.
+site to
+[SoAuthProvider](https://github.com/jagthedrummer/so_auth_provider).
+See the [SoAuthClient](https://github.com/jagthedrummer/so_auth_client)
+project for an example of using this gem.
+
+See [http://www.octolabs.com/so-auth](http://www.octolabs.com/so-auth)
+for more details.
 
 
 Usage
