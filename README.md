@@ -79,7 +79,7 @@ rake db:migrate; rake db:test:prepare
 
 ## Update `ApplicationController`
 
-Change your `ApplicationController` to inhereit from
+Change your `ApplicationController` to inherit from
 `SoAuth::ApplicationController`. The first line should look like this.
 
 ```ruby
