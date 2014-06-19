@@ -19,7 +19,7 @@ Usage
 gem 'so_auth'
 ```
 
-## Generate an initilizer
+## Generate an initializer
 
 Run this command
 
@@ -41,7 +41,7 @@ probably be `http://localhost:3000/oauth/applications`.
 
 Create a new application, and set the callback URL to
 `http://localhost:3001/auth/so/callback`. Change the port if you
-plan to run your client app on a differnt port. (See the optional
+plan to run your client app on a different port. (See the optional
 section below.)
 
 After creating the app make note of the Application Id and the 
@@ -79,7 +79,7 @@ rake db:migrate; rake db:test:prepare
 
 ## Update `ApplicationController`
 
-Change your `ApplicationController` to inhereit from
+Change your `ApplicationController` to inherit from
 `SoAuth::ApplicationController`. The first line should look like this.
 
 ```ruby
